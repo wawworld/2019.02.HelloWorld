@@ -24,6 +24,6 @@ private:
 	//SDL_Rect m_destinationRectangle; // 대상 사각형 
 
 	int m_currentFrame;
-	TextureManager m_textureManager;
+	//TextureManager m_textureManager;
 
 };
