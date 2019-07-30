@@ -1,6 +1,7 @@
 #pragma once
 #include "SDLGameObject.h"
 #include "TextureManager.h"
+#include "InputHandler.h"
 
 #include <vector>
 #include <SDL.h>
@@ -32,6 +33,7 @@ public:
 		return s_pInstance;
 	}
 
+	void quit() { m_bRunning = false;  }
 private:
 	SDL_Window* m_pWindow;
 	SDL_Renderer* m_pRenderer;
