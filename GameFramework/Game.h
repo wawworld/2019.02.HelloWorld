@@ -34,6 +34,9 @@ public:
 	}
 
 	void quit() { m_bRunning = false;  }
+	void  pushBack(GameObject* obj) { 
+		m_gameObjects.push_back(obj);
+	}
 private:
 	SDL_Window* m_pWindow;
 	SDL_Renderer* m_pRenderer;
