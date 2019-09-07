@@ -1,10 +1,24 @@
 #pragma once
+#include <SDL.h>
+
+#include "GameObject.h"
 #include "SDLGameObject.h"
+
 #include "TextureManager.h"
 #include "InputHandler.h"
 
-#include <vector>
-#include <SDL.h>
+#include "LoaderParams.h"
+#include "Vector2D.h"
+
+#include "GameStateMachine.h"
+#include "GameState.h"
+#include "MenuState.h"
+#include "PlayState.h"
+
+#include "MenuButton.h"
+#include "Player.h"
+#include "Enemy.h"
+
 
 class GameStateMachine;
 
@@ -39,6 +53,8 @@ public:
 	void  pushBack(GameObject* obj) { 
 		//m_gameObjects.push_back(obj);
 	}
+	GameStateMachine* getStateMachine() { return m_pGameStateMachine; }
+
 private:
 	SDL_Window* m_pWindow;
 	SDL_Renderer* m_pRenderer;

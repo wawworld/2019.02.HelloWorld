@@ -1,4 +1,3 @@
-#include "Enemy.h"
 #include "Game.h"
 
 Enemy::Enemy(const LoaderParams* pParams) : SDLGameObject(pParams)

@@ -1,7 +1,7 @@
 #pragma once
-#include "GameState.h"
 #include <vector>
 
+class GameState;
 class GameStateMachine
 {
 public:

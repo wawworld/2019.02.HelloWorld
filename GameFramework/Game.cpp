@@ -1,9 +1,4 @@
 #include "Game.h"
-#include "Enemy.h"
-#include "Player.h"
-#include "GameStateMachine.h"
-#include "MenuState.h"
-#include "PlayState.h"
 
 #include <iostream>
 

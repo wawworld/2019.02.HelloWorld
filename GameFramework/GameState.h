@@ -1,10 +1,8 @@
 #pragma once
-
 #include <string>
 #include <vector>
 
 class GameObject;
-
 class GameState
 {
 public:

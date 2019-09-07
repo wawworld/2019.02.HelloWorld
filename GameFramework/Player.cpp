@@ -1,8 +1,5 @@
 
 #include "Game.h"
-#include "Player.h"
-#include "Enemy.h"
-
 
 Player::Player(const LoaderParams* pParams) : SDLGameObject(pParams)
 {
