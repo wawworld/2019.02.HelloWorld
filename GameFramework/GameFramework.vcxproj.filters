@@ -48,6 +48,9 @@
     <ClCompile Include="GameStateMachine.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="MenuButton.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -87,6 +90,9 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="GameStateMachine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuButton.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

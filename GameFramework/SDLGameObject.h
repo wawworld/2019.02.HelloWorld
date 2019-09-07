@@ -8,7 +8,7 @@ public:
 	SDLGameObject(const LoaderParams* pParams);
 	virtual void draw();
 	virtual void update()=0;
-	virtual void clean()=0;
+	virtual void clean() {};
 protected:
 
 	Vector2D m_position;
