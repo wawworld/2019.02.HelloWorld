@@ -6,6 +6,8 @@
 #include <vector>
 #include <SDL.h>
 
+class GameStateMachine;
+
 class Game
 {
 private:
@@ -35,15 +37,16 @@ public:
 
 	void quit() { m_bRunning = false;  }
 	void  pushBack(GameObject* obj) { 
-		m_gameObjects.push_back(obj);
+		//m_gameObjects.push_back(obj);
 	}
 private:
 	SDL_Window* m_pWindow;
 	SDL_Renderer* m_pRenderer;
 	bool m_bRunning;
 
+	GameStateMachine* m_pGameStateMachine;
 	// Ãß°¡
-	std::vector<GameObject*> m_gameObjects;
+	//std::vector<GameObject*> m_gameObjects;
 };
 
 typedef Game TheGame;
