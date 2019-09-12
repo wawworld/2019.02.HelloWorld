@@ -14,6 +14,8 @@
 #include "GameState.h"
 #include "MenuState.h"
 #include "PlayState.h"
+#include "PauseState.h"
+
 
 #include "MenuButton.h"
 #include "Player.h"
