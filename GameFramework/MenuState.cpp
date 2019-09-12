@@ -62,8 +62,6 @@ bool MenuState::onExit()
 void MenuState::s_menuToPlay()
 {
 	std::cout << "Play button clicked\n";
-
-	//TheGame::Instance()->getStateMachine()->changeState(new PlayState());
 	TheGame::Instance()->getStateMachine()->changeState(PlayState::Instance());
 }
 
