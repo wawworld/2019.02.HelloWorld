@@ -1,6 +1,7 @@
 ﻿#include "Game.h"
 #include <iostream>
 const std::string MenuState::s_menuID = "MENU";
+MenuState* MenuState::s_pInstance = NULL;
 
 void MenuState::update()
 {
@@ -62,7 +63,8 @@ void MenuState::s_menuToPlay()
 {
 	std::cout << "Play button clicked\n";
 
-	TheGame::Instance()->getStateMachine()->changeState(new PlayState());
+	//TheGame::Instance()->getStateMachine()->changeState(new PlayState());
+	TheGame::Instance()->getStateMachine()->changeState(PlayState::Instance());
 }
 
 void MenuState::s_exitFromMenu()

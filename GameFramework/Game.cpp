@@ -32,7 +32,7 @@ bool Game::init(const char* title, int xpos, int ypos, int width, int height, bo
 	//m_gameObjects.push_back(new Enemy(new LoaderParams(300, 300, 128, 82, "animate")));
 
 	m_pGameStateMachine = new GameStateMachine();
-	m_pGameStateMachine->changeState(new MenuState());
+	m_pGameStateMachine->changeState(MenuState::Instance());
 
 	return true;
 }

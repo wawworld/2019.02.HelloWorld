@@ -1,11 +1,14 @@
 ﻿#include "Game.h"
 
 const std::string PauseState::s_pauseID = "PAUSE";
+PauseState* PauseState::s_pInstance = NULL;
+
 
 void PauseState::s_pauseToMain()
 {
-	TheGame::Instance()->getStateMachine()->changeState(
-		new MenuState());
+	//TheGame::Instance()->getStateMachine()->changeState(
+	//	new MenuState());
+	TheGame::Instance()->getStateMachine()->changeState(MenuState::Instance());
 }
 
 void PauseState::s_resumePlay()
