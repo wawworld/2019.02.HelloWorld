@@ -3,6 +3,8 @@
 
 #include "GameObject.h"
 #include "SDLGameObject.h"
+#include "AnimatedGraphic.h"
+
 
 #include "TextureManager.h"
 #include "InputHandler.h"
@@ -15,6 +17,8 @@
 #include "MenuState.h"
 #include "PlayState.h"
 #include "PauseState.h"
+#include "GameOverState.h"
+
 
 
 #include "MenuButton.h"

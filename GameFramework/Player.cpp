@@ -7,7 +7,7 @@ Player::Player(const LoaderParams* pParams) : SDLGameObject(pParams)
 
 void Player::draw()
 {
-	SDLGameObject::draw(); 
+	// SDLGameObject::draw(); 
 	if (m_velocity.getX() > 0)
 	{
 		TextureManager::Instance()->drawFrame(m_textureID,
@@ -29,7 +29,7 @@ void Player::update()
 	m_velocity.setX(0);
 	m_velocity.setY(0);
 	handleInput(); 
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
+	m_currentFrame = int(((SDL_GetTicks() / 100) % 5));
 	SDLGameObject::update();
 }
 
